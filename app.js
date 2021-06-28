@@ -33,7 +33,7 @@ slowMath.add(6, 2)
     });
 
     //Async 
-    async function newVersion(x, y) {
+    async function asyncFunc(x, y) {
         try {
             const a = await slowMath.add(x, y);
             const b = await slowMath.multiply(a, 2);
@@ -51,4 +51,4 @@ slowMath.add(6, 2)
         }
     }
     
-    newVersion(6, 2);
+    asyncFunc(6, 2);
